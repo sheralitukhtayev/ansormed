@@ -1,5 +1,5 @@
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 .ansormed-logo {
@@ -25,15 +25,26 @@
   color: #DE2E54;
   opacity: 0.5;
 }
+header {
+  /* max-width: 100%; */
+  width: 100%;
+  /* width: 1100px; */
+  padding-left: auto;
+  margin-right: auto;
+  background-color: #8dbec2;
+  display: flex;
+}
 .header-container {
-  width: 1100px;
+  /* max-width: 100%; */
   padding-left: 0px;
   padding-right: 0px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #adb2b3;
 }
 
 .header-container-1 {
+  max-width: 1100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,16 +138,23 @@ header {
 .site-nav-item:last-child {
   margin-right: 0px;
 }
+
+.main {
+  max-width: 100%;
+  /* width: 1100px; */
+}
 .hero {
   padding-left: 170px;
   padding-right: 170px;
   display: flex;
+  /* width: 1100px; */
+  width: 100%;
   justify-content: space-between;
   background-color: #0EB4C1;
 }
 
 .hero-container {
-  width: 1100px;
+  /* width: 1100px; */
   padding-left: 0px;
   padding-right: 0px;
   margin-left: auto;
@@ -280,8 +298,8 @@ header {
 .services-container-item-text {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-line-height: 150%;
-color: #444;
+  line-height: 150%;
+  color: #444;
 }
 
 .services-container-item-img {
@@ -296,7 +314,7 @@ color: #444;
 }
 
 footer {
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -327,7 +345,7 @@ footer {
 }
 
 .footer-bottom {
-  width: 100%;
+  /* width: 100%; */
   padding-left: 0px;
   padding-right: 0px;
   margin-left: auto;
